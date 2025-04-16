@@ -26,7 +26,7 @@ jobs:
         run: npm install -g yarn && yarn
 
       - name: Install Playwright Browsers
-        run: yarn playwright install-deps
+        run: yarn playwright install --with-deps
 
       - name: Run Smoke Tests
         run: yarn smoke
