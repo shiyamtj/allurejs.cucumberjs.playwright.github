@@ -22,14 +22,14 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install -g yarn && yarn
+      # - name: Install dependencies
+      #   run: npm install -g yarn && yarn
 
-      - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
+      # - name: Install Playwright Browsers
+      #   run: yarn playwright install --with-deps
 
       - name: Run Smoke Tests
-        run: yarn smoke
+        run: yarn install && yarn smoke
         env:
           HEADLESS: true
 
@@ -84,5 +84,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: allure-report
+          publish_dir: allure-history
           publish_branch: gh-pages
