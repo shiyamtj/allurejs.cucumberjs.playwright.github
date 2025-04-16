@@ -10,7 +10,7 @@ on:
 jobs:
   execute-tests:
     timeout-minutes: 60
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: src/e2e
@@ -19,11 +19,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
+
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm install -g yarn && yarn
+
+      - name: Install Playwright Browsers
+        run: yarn playwright install --with-deps
 
       - name: Run tests
-        run: yarn ${{ inputs.run-command }}
+        run: yarn install --frozen-lockfile && yarn ${{ inputs.run-command }}
         env:
           HEADLESS: true
 
