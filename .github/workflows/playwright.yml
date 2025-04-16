@@ -10,7 +10,7 @@ on:
 jobs:
   execute-tests:
     timeout-minutes: 60
-    runs-on: PC-SHIYAMJ
+    runs-on: self-hosted
     defaults:
       run:
         working-directory: src/e2e
