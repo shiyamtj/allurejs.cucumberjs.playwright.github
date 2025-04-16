@@ -54,6 +54,10 @@ jobs:
         with:
           name: allure-results
 
+      - name: List Directory Contents
+        run: ls -R
+        shell: bash
+
       - name: Generate Allure Report
         run: |
           npm install -g allure-commandline --save-dev
