@@ -1,0 +1,22 @@
+{
+  "name": "allurejs.cucumberjs.playwright.github",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@cucumber/messages": "^27.2.0",
+    "@playwright/test": "^1.51.1",
+    "@types/cucumber": "^7.0.3",
+    "@types/node": "^22.14.1",
+    "allure-cucumberjs": "^3.2.1",
+    "allure-js-commons": "^3.2.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "smoke": "cross-env cucumber-js --require support/hooks.ts --require steps/**/*.steps.ts --require-module ts-node/register features/**/*.feature --format allure-cucumberjs/reporter -t @smoke --retry 0"
+  }
+}

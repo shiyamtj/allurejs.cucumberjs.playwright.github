@@ -1,0 +1,4 @@
+{
+  "editor.formatOnSave": true,
+  "cucumberautocomplete.steps": ["src/e2e/steps/*.ts"]
+}

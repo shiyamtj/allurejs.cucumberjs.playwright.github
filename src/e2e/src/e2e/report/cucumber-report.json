@@ -1,0 +1,568 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "web-navigation-01;visit-website-01",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Visit website 01",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 101360000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "location": "steps\\given.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3254094200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30323000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "web-navigation-01;visit-website-02",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Visit website 02",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 73391200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I navigate to \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "location": "steps\\given.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2964078299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 23399999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "web-navigation-01",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Web Navigation 01",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-site-dashboard;login-with-valid-credentials---dashboard",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with valid credentials - dashboard",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 81226899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "steps\\given.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1275323199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see locator \"[data-test=\\\"username\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30132799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I should see locator \"[data-test=\\\"password\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3322500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should see locator \"[data-test=\\\"login-button\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2877799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I fill \"standard_user\" locator with \"[data-test=\\\"username\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17836699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see locator \"[data-test=\\\"username\\\"]\" toHaveValue as \"standard_user\"",
+            "match": {
+              "location": "steps\\then.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8163900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I fill \"secret_sauce\" locator with \"[data-test=\\\"password\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7938799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click locator \"[data-test=\\\"login-button\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70768700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see button role element with text \"Open Menu\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8428499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click button role element with text \"Open Menu\"",
+            "match": {
+              "location": "steps\\when.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45709799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see button role element with text \"Close Menu\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6552400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see locator \"[data-test=\\\"logout-sidebar-link\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5244899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click locator \"[data-test=\\\"logout-sidebar-link\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 974045899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see locator \"[data-test=\\\"login-button\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5620600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 24814400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-site-dashboard",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo Site dashboard",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\saucedemo.dashboard.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-site-login;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84743200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "steps\\given.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 608738900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see locator \"[data-test=\\\"username\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20293599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I should see locator \"[data-test=\\\"password\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4572799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I should see locator \"[data-test=\\\"login-button\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2750300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I fill \"standard_user\" locator with \"[data-test=\\\"username\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12276299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see locator \"[data-test=\\\"username\\\"]\" toHaveValue as \"standard_user\"",
+            "match": {
+              "location": "steps\\then.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4372199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I fill \"secret_sauce\" locator with \"[data-test=\\\"password\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7237700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I click locator \"[data-test=\\\"login-button\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71312700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see button role element with text \"Open Menu\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5698999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I click button role element with text \"Open Menu\"",
+            "match": {
+              "location": "steps\\when.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48621699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see button role element with text \"Close Menu\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4184900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see locator \"[data-test=\\\"logout-sidebar-link\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2358000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I click locator \"[data-test=\\\"logout-sidebar-link\\\"]\"",
+            "match": {
+              "location": "steps\\when.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 983682399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see locator \"[data-test=\\\"login-button\\\"]\" tobeVisible",
+            "match": {
+              "location": "steps\\then.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2963200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 30002200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-site-login",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Sauce Demo Site login",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\saucedemo.login.feature"
+  }
+]
