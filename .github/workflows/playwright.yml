@@ -1,9 +1,12 @@
 name: Playwright Tests
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      run-command:
+        description: 'Run command'
+        required: true
+        type: string
+
 jobs:
   execute-tests:
     timeout-minutes: 60
@@ -16,12 +19,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
-      - name: Install dependencies
-        run: npm install -g yarn && yarn
-      - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
-      - name: Run Playwright tests
-        run: yarn playwright test
+      # - name: Install dependencies
+      #   run: npm install -g yarn && yarn
+      # - name: Install Playwright Browsers
+      #   run: yarn playwright install --with-deps
+      - name: Run tests
+        run: yarn install --frozen-lockfile && yarn install && yarn ${{ inputs.run-command }}
+
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
