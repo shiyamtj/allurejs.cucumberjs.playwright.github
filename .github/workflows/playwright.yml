@@ -10,7 +10,7 @@ on:
 jobs:
   execute-tests:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: PC-SHIYAMJ
     defaults:
       run:
         working-directory: src/e2e
@@ -32,5 +32,5 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
-          path: playwright-report/
+          path: src/e2e/allure-results/
           retention-days: 30
