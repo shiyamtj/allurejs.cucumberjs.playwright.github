@@ -11,7 +11,9 @@ Feature: Feature_Web Navigation - Product X Brand A
   Scenario: XA_TC_03_01_Test website navigation - Critical test
     This is a test scenario to visit a website
     Given I navigate to "https://opensource-demo.orangehrmlive.com/"
+    Then I should see button role element with text "Open Menu" tobeVisible
 
   Scenario: XA_TC_03_02_Test website navigation - Normal test
     This is a test scenario to visit a website
     Given I navigate to "https://opensource-demo.orangehrmlive.com/"
+    Then I should see title as "OrangeHRM1"

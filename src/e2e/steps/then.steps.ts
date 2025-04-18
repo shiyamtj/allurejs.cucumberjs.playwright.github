@@ -24,3 +24,8 @@ Then(
     await expect(page.getByRole('button', { name: value })).toBeVisible()
   }
 )
+
+Then('I should see title as {string}', async function (value: string) {
+  const pageTitle = await this.page.title()
+  expect(pageTitle).toBe(value)
+})
