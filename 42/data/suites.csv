@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 18 04:52:03 GMT 2025","Fri Apr 18 04:52:04 GMT 2025","1262","","","","","","YA_TC_02_01_Test website navigation - Critical test","This is a test scenario to visit a website"
+"passed","Fri Apr 18 04:52:00 GMT 2025","Fri Apr 18 04:52:03 GMT 2025","3007","","","","","","XA_TC_03_02_Test website navigation - Normal test","This is a test scenario to visit a website"
+"passed","Fri Apr 18 04:52:04 GMT 2025","Fri Apr 18 04:52:06 GMT 2025","2199","","","","","","Login with valid credentials",""
+"passed","Fri Apr 18 04:52:04 GMT 2025","Fri Apr 18 04:52:05 GMT 2025","983","","","","","","YB_TC_01_01_Test website navigation - Critical test","This is a test scenario to visit a website"
+"passed","Fri Apr 18 04:52:03 GMT 2025","Fri Apr 18 04:52:04 GMT 2025","1038","","","","","","website navigation - Minor test","This is a test scenario to visit a website"
+"passed","Fri Apr 18 04:52:00 GMT 2025","Fri Apr 18 04:52:03 GMT 2025","3231","","","","","","XA_TC_03_01_Test website navigation - Critical test","This is a test scenario to visit a website"
