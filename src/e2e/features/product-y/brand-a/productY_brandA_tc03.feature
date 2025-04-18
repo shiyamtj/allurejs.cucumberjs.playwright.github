@@ -1,4 +1,3 @@
-@smoke
 @regression
 @product-y
 @brand-a

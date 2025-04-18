@@ -13,13 +13,19 @@
     "allure-cucumberjs": "^3.2.1",
     "allure-js-commons": "^3.2.1",
     "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^7.2.0",
+    "cucumber-pretty": "^6.0.1",
     "dotenv": "^16.5.0",
+    "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "scripts": {
-    "allure-report": "yarn allure generate allure-results --clean -o allure-report && allure open allure-report",
-    "smoke": "cross-env cucumber-js --require support/hooks.ts --require steps/**/*.steps.ts --require-module ts-node/register features/**/*.feature --format allure-cucumberjs/reporter -t @smoke --retry 1 -t @smoke",
-    "regression": "cross-env cucumber-js --require support/hooks.ts --require steps/**/*.steps.ts --require-module ts-node/register features/**/*.feature --format allure-cucumberjs/reporter --retry 1 -t @regression"
+    "clean": "rimraf allure-results allure-report cucumber-report reports",
+    "report:cucumber": "ts-node cucumber-report.ts",
+    "report:allure-single-html": "yarn allure generate allure-results --clean -o --single-file allure-report",
+    "report:allure": "yarn allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "smoke": "yarn clean && cross-env cucumber-js -p allure -p webkit -p phone -t @smoke",
+    "regression": "yarn clean && cross-env cucumber-js -p allure -t @regression"
   }
 }

@@ -28,8 +28,8 @@ jobs:
       - name: Install Playwright Browsers
         run: yarn playwright install --with-deps
 
-      - name: Run Smoke Tests
-        run: yarn regression
+      - name: Run smoke tests
+        run: yarn smoke
         env:
           HEADLESS: true
 

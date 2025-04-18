@@ -1,4 +1,4 @@
-@smoke
+@smoke1
 Feature: Sauce Demo Site dashboard
 
   Scenario: Login with valid credentials - dashboard
