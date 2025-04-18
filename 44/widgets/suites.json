@@ -1,0 +1,1 @@
+{"total":3,"items":[{"uid":"33ac7bc3d74cd4c07be7978b363a3ddf","name":"ProductX","statistic":{"failed":0,"broken":0,"skipped":0,"passed":3,"unknown":0,"total":3}},{"uid":"308f022f5d06c62d0db8d3a6fefb44f8","name":"ProductY","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
