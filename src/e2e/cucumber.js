@@ -1,5 +1,7 @@
 const { REPORT_FOLDER, PARALLEL, RETRIES } = require('./constants.ts')
 const os = require('os')
+const { version: playwrightVersion } = require('playwright/package.json')
+const { version: cucumberVersion } = require('@cucumber/cucumber/package.json')
 
 const commonConfig = {
   format: [`json:${REPORT_FOLDER}/cucumber_report.json`],
@@ -22,6 +24,8 @@ const allureConfig = {
       os_release: os.release(),
       os_version: os.version(),
       node_version: process.version,
+      playwright_version: playwrightVersion,
+      cucumber_version: cucumberVersion,
     },
   },
 }
