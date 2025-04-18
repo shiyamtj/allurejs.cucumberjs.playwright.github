@@ -1,4 +1,5 @@
 const { REPORT_FOLDER, PARALLEL, RETRIES } = require('./constants.ts')
+const os = require('os')
 
 const commonConfig = {
   format: [`json:${REPORT_FOLDER}/cucumber_report.json`],
@@ -15,6 +16,14 @@ const allureConfig = {
     'allure-cucumberjs/reporter',
     `json:${REPORT_FOLDER}/cucumber_report.json`,
   ],
+  formatOptions: {
+    environmentInfo: {
+      os_platform: os.platform(),
+      os_release: os.release(),
+      os_version: os.version(),
+      node_version: process.version,
+    },
+  },
 }
 
 module.exports = {
